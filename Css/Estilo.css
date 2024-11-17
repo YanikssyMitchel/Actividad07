@@ -1,0 +1,139 @@
+
+    
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
+}
+header {
+    background-color: rgb(253, 227, 252);
+    border: 2px solid rgba(239, 246, 241, 0.898);
+    padding: 20px;
+    text-align: center;
+    color: rgb(2, 58, 2);
+    border-radius: 3px 3px 10px;
+}
+.Busqueda {
+    text-align: center;
+    width: 100%;
+}
+.Busqueda li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 10px;
+    text-align: center;
+}
+.Busqueda li a {
+    background-image: linear-gradient(to bottom, rgb(168, 181, 238), rgb(114, 91, 167));
+    color: black;
+    font-size: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.Busqueda li a:hover {
+    background-image: linear-gradient(to bottom, rgb(236, 251, 236), rgb(201, 213, 255));
+}
+
+section {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: flex-start;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-height: none;
+}
+
+aside#vertical {
+    flex-basis: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+article img, aside img {
+    width: 100%;
+    height: auto;
+    width: 200px;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li a {
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, rgb(168, 181, 238), rgb(114, 91, 167));
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+footer ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ol li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ol li img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+footer ol li p {
+    font-size: 12px;
+    margin: 0;
+    color: #333;
+}
+article p{
+    text-align: justify; 
+    font-size: 14px; 
+    line-height: 1.6; 
+}
+.comentarios {
+    float: right; 
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}
+h5{
+    color: gray;
+}

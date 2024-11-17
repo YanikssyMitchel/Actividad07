@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Autores" content="Keyla Salazar,Priscilla Salazar,Gustavo Sandoval">
+    <meta name="Autores" content="Keyla Salazar">
     <meta name="Descripcion" content="Practica CSS, creación de periodico">
     <meta name="Keywords" content="Futbol, Natacion, CSS, Cajas, periodico">
     <link rel="icon" href="favicon_io-2/favicon-16x16.png" type="image/png">
@@ -13,67 +13,78 @@
     <link rel="icon" href="favicon_io-2/android-chrome-512x512.png" type="image/png">
     <link rel="icon" href="favicon_io-2/apple-touch-icon.png" type="image/png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <title>Pratica periodico</title>
+    <link rel="stylesheet" href="Css/Estilo.css">
+    <title>Practica Periodico</title>
 </head>
 <body>
     
-       <header>
-            <h1>Practica Periódico</h1>
-            <nav>
+    <header >
+        <h1>Practica Periódico</h1>
+        
+    </header>
+    <nav class="Busqueda">
+        <ul class="texto">
+            <li><a href=""><i class="fa-solid fa-passport"></i>Nacional</a></li>
+            <li><a href=""><i class="fa-solid fa-volleyball"></i>Deportes</a></li>
+            <li><a href=""><i class="fa-solid fa-person-running"></i>Sucesos</a></li>
+            <li><a href=""><i class="fa-solid fa-display"></i>Tecnologia</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article id="Sucesos">
+                <hgroup>
+                    <h3>Sucesos</h3>
+                </hgroup>
+                <h2>El Misterioso Incidente en el Faro</h2>
+                <h5>Publicado el 25/09/2024</h5>
+                <img src="imagenes/temblor.webp" alt="ImagenTemblor">
+                <h4>Temblor Costa Rica</h4>
+
+                <p>El 25 de septiembre de 2024, un extraño incidente ocurrió en el Faro de Punta Vela. Los habitantes cercanos escucharon ruidos extraños durante la noche. Al amanecer, encontraron la puerta del faro abierta, pero sin rastro de su cuidador, Joaquín. En el interior, había una brújula rota y una carta con un mensaje ilegible. La policía no encontró señales de lucha, pero algunos testigos afirmaron ver una figura misteriosa cerca del faro. El caso fue archivado como "no resuelto", pero muchos creen que el faro guarda un oscuro secreto.</p>
+                <p class="comentarios">Comentarios 0</p>
+            </article>
+            
+            <article id="Deportes">
+                <hgroup>
+                    <h3>Deportes</h3>
+                </hgroup>
+                <h2>Bayern Munich: El Campeón de la Champions</h2>
+                <h5>Publicado el 25/09/2024</h5>
+                <img src="imagenes/champions-bayern.jpg" alt="ImagenBayern">
+                <h4>Bayern Munich</h4>
+                <p>El 25 de septiembre de 2024, el Bayern Munich se coronó campeón de la Liga de Campeones de la UEFA tras vencer al PSG. Leroy Sané abrió el marcador y el arquero Manuel Neuer evitó los ataques del PSG. En los últimos minutos, Joshua Kimmich selló la victoria con un golazo. Con este título, el Bayern consolidó su lugar como uno de los grandes de Europa, celebrando su sexta Copa de Europa y demostrando su dominio global en el fútbol.</p>
+                <p class="comentarios">Comentarios 0</p>
+            </article>         
+        </section>
+
+        <aside id="vertical">
+            <h2>Temas relacionados</h2>
+            <img src="imagenes/istockphoto-487264370-612x612.jpg" alt="Natacion">
+            <h4>Natación</h4>
+            <nav id="Busqueda">
                 <ul>
                     <li><a href=""><i class="fa-solid fa-passport"></i>Nacional</a></li>
                     <li><a href=""><i class="fa-solid fa-volleyball"></i>Deportes</a></li>
                     <li><a href=""><i class="fa-solid fa-person-running"></i>Sucesos</a></li>
                     <li><a href=""><i class="fa-solid fa-display"></i>Tecnologia</a></li>
-
                 </ul>
             </nav>
-       </header>
-       <main>
-        <section >
-            <article id="Sucesos">
-                <hgroup>
-                    <h3>Sucesos</h3>
-                </hgroup>
-                <h2>Temblor de esta tarde en Costa Rica</h2>
-                <h4>Publicado el 25/09/2011</h4>
-                <img src="imagenes/temblor.webp" alt="ImagenTemblor">
-                <p>Temblor en Costa Rica</p>
-                <p>
-                    El fuerte sismo se registró a las 13H21 locales (19H21 GMT) y causó cortes del servicio eléctrico en sectores de San José, donde muchas personas salieron a las calles.
-                    Mientras, el USGS informó que el sismo fue 6,2 grados magnitud momento, y que su epicentro fue 35 km al noroeste de la capital, a una profunidad de 28 km.
-                    El fuerte temblor causó apagones eléctricos en sectores de San José y contribuyó a que colapsaran las líneas de teléfonos celulares.
-                    Cuando llevaba unos 20 segundos y parecía que iba a terminar el sismo, vino un intenso remezón que llevó a mucha gente a salir a la calle para protegerse.
-                    El agua de las piscinas se movió tanto que llegaron a desbordarse en algunos lugares, según testigos que dijeron que en 30 años no habían visto "nada igual".
-                    El miércoles, otro sismos de 4 grados de magnitud en la escala de Ricther sacudió la zona central de Costa Rica sin que se reportaran daños ni víctimas, pero el de este jueves fue mucho más largo y más intenso.
-                    </p>
-                <p>O comentarios</p>
-            </article>
-            <article id="Deportes">
-                <hgroup>
-                    <h3>Deportes</h3>
-                </hgroup>
-                <h2>Bayern Munich ganador de la champions</h2>
-                <h4>Publicado el 25/09/2011</h4>
-                <img src="imagenes/champions-bayern.jpg" alt="ImagenBayern">
-                <h4>Bayern Munich</h4>
-                <p>
-                    El PSG, después de muchos años intentándolo y varios millones de euros invertidos, por 
-                    fin había llegado a su primera final de Champions League y de la mano de Mbappé y
-                     Neymar, buscaban ser campeones de esta competencia por primera vez en su historia.
-                    Por el otro lado estaba un Bayern Múnich con experiencia en estos partidos. Han 
-                    ganado la Champions en cinco ocasiones, pero esta vez era diferente por qué querían 
-                    hacer historia al convertirse en el primer equipo en ser campeón invicto. El AC Milán fue el 
-                    único que casi lo logra en 1992, pero perdió la final contra el Olympique de 
-                    Marsella.
-                    </p>
-                <p>O comentarios</p>
-                
-            </article>
-        </section>
-        
-       </main>
-    
+        </aside>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>®Página realizada por Keyla Salazar Céspedes</h2>
+        <ol>
+            <li><img src="imagenes/icons8-logo-de-google-50.png" alt="Logo google"></li>
+            <li><img src="imagenes/icons8-facebook-nuevo-50.png" alt="Logo facebook"></li>
+            <li><img src="imagenes/icons8-instagram-30.png" alt="Logo instagram"></a></li>
+            <li><img src="imagenes/icons8-linkedin-50.png" alt="Logo linkendin"></a></li>
+            <li><img src="imagenes/icons8-twitter-50.png" alt="Logo twitter"></li>
+            <li><img src="imagenes/icons8-youtube-30.png" alt="Logo youtube"></li>
+        </ol>
+    </footer>
+
 </body>
 </html>
